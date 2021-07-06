@@ -2,6 +2,7 @@
   "name": "ifood-integrator-chat-example",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://luistak.github.io/ifood-integrator-chat-example",
   "dependencies": {
     "@ant-design/icons": "^4.6.2",
     "antd": "^4.16.6",
@@ -15,7 +16,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint --ext=ts --ext=tsx ."
+    "lint": "eslint --ext=ts --ext=tsx .",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -44,7 +47,8 @@
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@types/react-router-dom": "^5.1.7",
-    "typescript": "^4.1.2",
-    "react-scripts": "4.0.3"
+    "gh-pages": "^3.2.3",
+    "react-scripts": "4.0.3",
+    "typescript": "^4.1.2"
   }
 }
